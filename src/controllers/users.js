@@ -25,7 +25,7 @@ module.exports = {
 }
 
 // async function yoi(){
-//     console.log(await createAnonUser());
+//     console.log(await getUserByUsername('dangerous-chalk'));
 // }
 
 // yoi()

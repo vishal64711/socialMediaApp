@@ -1,7 +1,15 @@
 const express = require('express')
-const app = express()
 
-const{ db } = require('./db/models')
+const {db} = require('./db/models')
+
+const {usersRoute} = require('./routes/users')
+//const {postRoute} = require('./routes/posts')
+
+const app = express()
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
+app.use('/api/users', usersRoute)
 
 db.sync()
 .then(()=>{
