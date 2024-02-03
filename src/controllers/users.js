@@ -24,8 +24,8 @@ module.exports = {
     getUserByUsername
 }
 
-async function yoi(){
-    console.log(await createAnonUser());
-}
+// async function yoi(){
+//     console.log(await createAnonUser());
+// }
 
-yoi()
+// yoi()
